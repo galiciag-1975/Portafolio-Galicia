@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <script>  
+        window.addEventListener('beforeunload', function (event) {  
+            const mensaje = '¿Estás seguro de que deseas salir?';  
+            event.preventDefault(); // Esto es necesario para algunos navegadores  
+            event.returnValue = mensaje; // Esto es lo que se mostrará en la alerta  
+            return mensaje; // Algunos navegadores requieren que se retorne el mensaje  
+        });  
+    </script> 
+    <meta charset="UTF-8">
+    <title>Luis Galicia Programador</title>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    
+
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/contacto.css">
+   
+    
+</head>
+<body>  
+    
+    <header class="main-header">
+        <div class="container container--flex">
+            <div class="logo-container column column--50">
+                <h1 class="logo">LUIS ALBERTO GALICIA</h1>
+            </div>
+            <div class="main-header__contactinfo column column--50">
+                <p class="main-header__contactinfo__phone">
+                   <span class="icon-phone">
+                    310881518 </span>           </p>
+                <p class="main-header__contactinfo__address"> <span class="icon-email">
+                    luisalbertogalicia@gmail.com  </span>        </p>   
+            </div>
+        </div>
+    </header>
+    <!--opciones de menu: nav ->nav.main-nav>.container +tab ul.menu#menu>li.menu__item*4>a.menu__link -->
+    <nav class="main-nav">
+        <div class="container container--flex">
+            <span class="icon-list" id="btnmenu"></span>
+        <ul class="menu" id="menu">
+            <li class="menu__item"><a href="acerca de mi.html" class="menu__link menu__link--select">acerca de mi</a></li>
+            <li class="menu__item"><a href="fortalezas.html" class="menu__link">Fortalezas</a></li>
+            <li class="menu__item"><a href="proyectos.html" class="menu__link">Proyectos</a></li>
+            <li class="menu__item"><a href="recomendaciones.html" class="menu__link">Recomendaciones</a></li>
+        </ul>
+        <!-- agragar los iconos con los textos -> .social-icon>a.social-icon__link*3>span.icon -->
+            <div class="social-icon">
+                <a href="" class="social-icon__link"><span class="icon-facebook"></span></a>
+                <a href="" class="social-icon__link"><span class="icon-whatsapp"></span></a>
+                <a href="" class="social-icon__link"><span class="icon-email"></span></a>
+            </div>
+        
+        </div>
+
+    </nav>
+    <section class="banner">
+       <img src="Img/pro2.jpg" alt="" height="500" width="500" class="banner__banner__img" style="opacity: 0.8">
+        <div class="banner__content">Programando hacia el futuro</div>
+    </section>
+    <main class="main">
+        <section class="group group--color">
+            <div class="container">
+                <h2 class="main__title">¡Hola soy Luis Galicia!</h2>
+                <p class="main__txt">Soy desarrollador Web Fullstack, soy profesional en ingeniería desde el 2017, soy docente de sistemas, programación, mantenimiento y diseño gráfico desde 1998, me he desempeñado como Líder de gestión académica en la universidad CUN de Ibagué, instructor sena de programación y del ministerio de las TICs. Tengo conocimientos en java, base de datos, html, python, analítica de datos, inteligencia artificial</p>
+            </div>
+        </section>
+        <section class="group main__about__description">
+           <div class="container container--flex">
+           <!--  <div class="column column--50">
+                <img src="./Img/F3.jpg" alt="" height="150" width="150">
+            </div>-->
+            <div class="column column">
+                <h2 class="column__title" align= "center">
+                    <h2 class="group__title">
+                    Proyectos
+                </h2>
+                <p class="column__txt">
+                    <h2 class="group__title1">Aplicación de escritorio</h2><br>
+                    Desarrollo de sistemas de información hotelera de escritorio en java<br><br>
+                    <h2 class="group__title1">Website</h2><br>
+                    Desarrollo web Restaurante<br><br>
+                    <h2 class="group__title1">Chatbox</h2><br>
+                    Desarrollo de una website con un chatbox para clientes de sistema de restaurante<br>
+                    
+                </p>
+                <a href="contacto.html" class="btn btn--contact">Contacto</a>
+            </div>            
+            </div>
+        </section>
+        <section class="group today-special">
+            <h2 class="group__title">Habilidades</h2>
+            <div class="container container--flex">
+                <div class="column column--50-25">
+                    <img src="Img/html.png" alt="" height="400" width="400"  class="today-special__img">
+                    <div class="today-special__title">Html</div>
+                    <div class="today-special__price">8 años de experiencia</div>
+                </div>
+                <div class="column column--50-25">
+                    <img src="Img/css.png" alt="" height="400" width="400" class="today-special__img">
+                    <div class="today-special__title">CSS</div>
+                    <div class="today-special__price">8 años de experiencia</div>
+                </div>
+                <div class="column column--50-25">
+                    <img src="Img/javas.png" alt="" height="400" width="400" class="today-special__img">
+                    <div class="today-special__title"> Javascript</div>
+                    <div class="today-special__price">8 años de experiencia</div>
+                </div>
+                <div class="column column--50-25">
+                    <img src="Img/java.png" alt="" height="400" width="400" class="today-special__img">
+                    <div class="today-special__title">Java</div>
+                    <div class="today-special__price">2 años de experiencia</div>
+                </div>
+                <div class="column column--50-25">
+                    <img src="Img/python.png" alt="" height="400" width="400" class="today-special__img">
+                    <div class="today-special__title">Python</div>
+                    <div class="today-special__price">2 años de experiencia</div>
+                </div>
+            </div>
+        </section>
+        <main class="main">
+         <!-- .group.contact>h2.group__title -->
+         <section class="group contact">
+             <h2 class="group__title">
+                 Déjame tu comentario
+             </h2>
+             <!-- .container.container--flex>.contact-information+.formulario -->
+             <div class="container container--flex">
+                 <div class="contact-information column column--50" >
+                     <!-- h3.column__title -->
+                     <h3 class="column__title">Información de contacto</h3>
+                     <!-- p.column__txt*5 -->
+                     <p class="column__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                     <p class="column__txt">
+                     <!-- span.icon- <-->
+                     <span class="icon-phone"></span> Teléfono 1: 123456789</p>
+                     <p class="column__txt"><span class="icon-phone"></span> Teléfono 2: 0987876553</p>
+                     <p class="column__txt"><span class="icon-mapmarker"></span> Dirección: katmandu #5</p>
+                     <p class="column__txt"><span class="icon-email"></span> Correo electrónico: luisalbertogalicia@gmail.com</p>
+                             <!-- agregar los iconos con los textos -> .social-icon>a.social-icon__link*3>span.icon -->
+                    <div class="social-icon">
+                        <a href="" class="social-icon__link"><span class="icon-facebook"></span></a>
+                        <a href="" class="social-icon__link"><span class="icon-whatsapp"></span></a>
+                        <a href="" class="social-icon__link"><span class="icon-email"></span></a>
+                    </div>
+                     
+                 </div>
+                 
+                 <form id="myform" action= "procesar.php" method= "post" class="formulario column column--50">
+                     <!-- label.formulario__label+input.formulario__input-txt -->
+                     <label for="" class="formulario__label">
+                         Nombre
+                     </label>
+                     <input type="text" class="formulario__input-txt" name="nombre" required>
+                     
+                     <label for="" class="formulario__label">
+                         Mensajes
+                     </label>
+                     <textarea id="" cols="30" rows="10" class="formulario__textarea" name="mensajes" required></textarea>
+                     <input type="submit" class="btn formulario__btn">
+                 </form>
+             </div>
+         </section>
+        
+    </main>
+    </main>
+        <footer class="main-footer">
+            <div class="container container--flex">
+                <div class="column column--33">
+                    <h2 class="column__title">
+                        Calidad en programación
+                    </h2>
+                    <p class="column__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta cum, consequuntur</p>
+                </div>
+                <div class="column column--33">
+                    <h2 class="column__title">
+                        Horarios de atención
+                    </h2>
+                    <p class="column__txt">Lunes a Sabados 1 p.m a 10 p.m</p>
+                </div>
+                <div class="column column--33">
+                    <h2 class="column__title">
+                        Siguenos en redes sociales
+                    </h2>
+                    <p class="column__txt">
+                     <a href="" class="icon-whatsapp">
+                         Whatsapp
+                     </a>   
+                    </p>
+                    <p class="column__txt">
+                     <a href="" class="icon-facebook">
+                         Facebook
+                     </a>   
+                    </p>
+                    <p class="column__txt">
+                     <a href="" class="icon-youtube">
+                         Youtube
+                     </a>   
+                    </p>
+                </div>
+                <p class="copy">&copy; Luis Galicia | Todos los derechos reservados</p>
+            </div>
+            
+        </footer>
+        <script src="js/menu.js" ></script>
+</body>
+</html>
